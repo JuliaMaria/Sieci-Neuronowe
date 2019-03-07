@@ -24,5 +24,21 @@ def nandOperator(bit1, bit2):
     result = np.dot(weights, np.array([bit1, bit2, 1]))
     return 1 if result>=0 else 0
 
+print(notOperator(1))
+print(notOperator(0))
 
+print(andOperator(0, 0))
+print(andOperator(0, 1))
+print(andOperator(1, 0))
+print(andOperator(1, 1))
+
+print(orOperator(0, 0))
+print(orOperator(0, 1))
+print(orOperator(1, 0))
+print(orOperator(1, 1))
+
+print(nandOperator(0, 0))
+print(nandOperator(0, 1))
+print(nandOperator(1, 0))
+print(nandOperator(1, 1))
 
